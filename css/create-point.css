@@ -1,0 +1,5 @@
+.page--create-point .header__register-point-icon {
+    background-image: url(../assets/arrow-left.svg);
+    height: 24px;
+    margin-right: 12px;
+}

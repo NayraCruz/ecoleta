@@ -3,6 +3,7 @@
     --primary-color: #23864F;
     --primary-hover: #279B5B;
     --border-color: #d1d1d1;
+    --bg-page: #F0F0F5;
 }
 
 html {
@@ -196,6 +197,7 @@ h1, .h1 {
     Page
 */
 .page {
+    background-color: var(--bg-page);
     background-repeat: no-repeat;
     height: 100vh;
 }
