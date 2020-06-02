@@ -1,0 +1,72 @@
+/* Page Home */
+.page--home {
+    background-color: #F0F0F5;
+    background-image: url(../assets/home-background.svg);
+    background-position: 72vw bottom;
+    background-size: auto;
+}
+@media (min-width: 768px) {
+    .page--home {
+        background-position: 74vw bottom;
+    }
+}
+@media (min-width: 992px) {
+    .page--home {
+        background-position: 37vw 260px;
+        background-size: 76%;
+    }
+}
+@media (min-width: 1200px) {
+    .page--home {
+        background-position: 41vw 200px;
+        background-size: auto;
+    }
+}
+
+.page--home .container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+/* Main */
+.page--home .main-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 560px;
+    text-align: center;
+}
+@media (min-width: 992px) {
+    .page--home .main-content {
+        margin-left: unset;
+        margin-right: unset;
+        text-align: left;
+    }
+}
+
+.page--home .main-description {
+    color: #6C6C80;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-top: 16px;
+}
+@media (min-width: 992px) {
+    .page--home .main-description {
+        font-size: 24px;
+        margin-top: 24px;
+    }
+}
+
+/* Button */
+.page--home .btn {
+    height: 72px;
+}
+
+.page--home .btn__icon {
+    height: 72px;
+    width: 72px;
+}
