@@ -279,8 +279,15 @@ h2, .h2 {
 
 .form__legend-extra {
     color: var(--text-gray);
+    display: inline-block;
     font-size: 14px;
     font-weight: normal;
+    margin-top: 10px;
+}
+@media (min-width: 992px) {
+    .form__legend-extra {
+        margin-top: 0;
+    }
 }
 
 @media (min-width: 768px) {

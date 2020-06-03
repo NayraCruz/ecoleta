@@ -27,6 +27,7 @@
     display: grid;
     gap: 16px;
     list-style: none;
+    margin-top: 20px;
 }
 @media (min-width: 576px) {
     .l-grid-items {
@@ -45,6 +46,7 @@
     background-color: var(--light-gray);
     border: 2px solid var(--light-gray);
     border-radius: 8px;
+    cursor: pointer;
     display: flex;
     flex-wrap: wrap;
     height: 184px;
@@ -54,6 +56,14 @@
     padding: 32px;
     transition: .15s;
     width: 192px;
+}
+.collect-item:hover, .collect-item:focus, .collect-item.-focused {
+    background-color: var(--light-green);
+    border-color: #4eff9f;
+}
+
+.collect-item.-focused {
+    border-color: var(--border-color);
 }
 
 .collect-item.-selected {
@@ -78,3 +88,4 @@
     flex: 1;
     text-align: center;
 }
+
