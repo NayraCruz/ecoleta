@@ -3,8 +3,11 @@
     --text-gray: #6C6C80;
     --primary-color: #23864F;
     --primary-hover: #279B5B;
+    --vibrant-green: #34CB79;
     --border-color: #d1d1d1;
     --bg-gray: #F0F0F5;
+    --light-gray: #f8f8f8;
+    --light-green: #E1FAEC;
 }
 
 html {

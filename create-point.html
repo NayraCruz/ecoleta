@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/sr-only.css">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/create-point.css">
 </head>
@@ -44,26 +45,26 @@
 
                         <div class="form__group">
                             <label class="form__label" for="name">Nome da entidade</label>
-                            <input class="form__input" id="name" name="name" type="text">
+                            <input class="form__input" id="name" name="name" type="text" required>
                         </div>
 
                         <div class="l-form-row l-form-row--bigger-left">
                             <div class="form__group">
                                 <label class="form__label" for="address">Endereço</label>
-                                <input class="form__input" id="address" name="address" type="text">
+                                <input class="form__input" id="address" name="address" type="text" required>
                             </div>
 
                             <div class="form__group">
                                 <label class="form__label" for="address-number">Número/Complemento</label>
-                                <input class="form__input" id="address-number" name="address-number" type="text">
+                                <input class="form__input" id="address-number" name="address-number" type="text" required>
                             </div>
                         </div>
 
                         <div class="l-form-row">
                             <div class="form__group">
                                 <label class="form__label" for="uf">Estado</label>
-                                <select name="uf" id="uf" class="form__input form__input--select">
-                                    <option value="">Selecione o estado</option>
+                                <select name="uf" id="uf" class="form__input form__input--select" required>
+                                    <option value="" selected>Selecione o estado</option>
                                 </select>
 
                                 <input type="hidden" name="state" id="state">
@@ -71,8 +72,8 @@
 
                             <div class="form__group">
                                 <label class="form__label" for="city">Cidade</label>
-                                <select name="city" id="city" class="form__input form__input--select" disabled>
-                                    <option value="">Selecione a cidade</option>
+                                <select name="city" id="city" class="form__input form__input--select" disabled required>
+                                    <option value="" selected>Selecione a cidade</option>
                                 </select>
                             </div>
                         </div>
@@ -87,6 +88,50 @@
                             <span class="form__legend-extra">Selecione um ou mais itens abaixo</span>
                         </div>
 
+                        <ul class="l-grid-items">
+                            <li class="l-grid-items__item">
+                                <div class="collect-item" data-id="1">
+                                    <input type="checkbox" class="sr-only collect-item__checkbox" id="lampadas" name="itens-coleta"  value="lampadas">
+                                    <img src="assets/lampadas.svg" class="collect-item__img" alt="Ícone de Lâmpadas">
+                                    <label for="lampadas" class="collect-item__label">Lâmpadas</label>
+                                </div>
+                            </li>
+                            <li class="l-grid-items__item">
+                                <div class="collect-item" data-id="2">
+                                    <input type="checkbox" class="sr-only collect-item__checkbox" id="pilhas-baterias" name="itens-coleta" value="pilhas-baterias">
+                                    <img src="assets/baterias.svg" class="collect-item__img" alt="Ícone de Pilhas e Baterias">
+                                    <label for="pilhas-baterias" class="collect-item__label">Pilhas e Baterias</label>
+                                </div>
+                            </li>
+                            <li class="l-grid-items__item">
+                                <div class="collect-item" data-id="3">
+                                    <input type="checkbox" class="sr-only collect-item__checkbox" id="papeis-papelao" name="itens-coleta" value="papeis-papelao">
+                                    <img src="assets/papeis-papelao.svg" class="collect-item__img" alt="Ícone de Papéis e Papelão">
+                                    <label for="papeis-papelao" class="collect-item__label">Papéis e Papelão</label>
+                                </div>
+                            </li>
+                            <li class="l-grid-items__item">
+                                <div class="collect-item" data-id="4">
+                                    <input type="checkbox" class="sr-only collect-item__checkbox" id="residuos-eletronicos" name="itens-coleta" value="residuos-eletronicos">
+                                    <img src="assets/eletronicos.svg" class="collect-item__img" alt="Ícone de Resíduos Eletrônicos">
+                                    <label for="residuos-eletronicos" class="collect-item__label">Resíduos Eletrônicos</label>
+                                </div>
+                            </li>
+                            <li class="l-grid-items__item">
+                                <div class="collect-item" data-id="5">
+                                    <input type="checkbox" class="sr-only collect-item__checkbox" id="residuos-organicos" name="itens-coleta" value="residuos-organicos">
+                                    <img src="assets/organicos.svg" class="collect-item__img" alt="Ícone de Resíduos Orgânicos">
+                                    <label for="residuos-organicos" class="collect-item__label">Resíduos Orgânicos</label>
+                                </div>
+                            </li>
+                            <li class="l-grid-items__item">
+                                <div class="collect-item" data-id="6">
+                                    <input type="checkbox" class="sr-only collect-item__checkbox" id="oleo-cozinha" name="itens-coleta" value="oleo-cozinha">
+                                    <img src="assets/oleo.svg" class="collect-item__img" alt="Ícone de Óleo de Cozinha">
+                                    <label for="oleo-cozinha" class="collect-item__label">Óleo de Cozinha</label>
+                                </div>
+                            </li>
+                        </ul>
                     </fieldset>
 
                     <button class="btn" type="submit">

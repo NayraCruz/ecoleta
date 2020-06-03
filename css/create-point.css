@@ -19,3 +19,62 @@
         margin-left: auto;
     }
 }
+
+/* 
+    Itens de Coleta 
+*/
+.l-grid-items {
+    display: grid;
+    gap: 16px;
+    list-style: none;
+}
+@media (min-width: 576px) {
+    .l-grid-items {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width: 768px) {
+    .l-grid-items {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+ 
+.collect-item {
+    align-content: space-between;
+    align-items: center;
+    background-color: var(--light-gray);
+    border: 2px solid var(--light-gray);
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 184px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 32px;
+    transition: .15s;
+    width: 192px;
+}
+
+.collect-item.-selected {
+    background: var(--light-green);
+    background: -webkit-linear-gradient(bottom, var(--light-green), #FFFFFF);
+    background: -moz-linear-gradient(bottom, var(--light-green), #FFFFFF);
+    background: linear-gradient(to top, var(--light-green), #FFFFFF);
+    border-color: var(--vibrant-green);
+    transition: .15s;
+}
+
+.collect-item__checkbox, .collect-item__img, .collect-item__label {
+    pointer-events: none;
+}
+
+.collect-item__img {
+    flex: 1 1 100%;
+}
+
+.collect-item__label {
+    color: var(--title-color);
+    flex: 1;
+    text-align: center;
+}
