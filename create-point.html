@@ -34,17 +34,70 @@
             </header>
 
             <main class="main-content">
-                <h1 class="h1">
-                    Cadastro do ponto de coleta
-                </h1>
+                <form class="form" action="">
+                    <h1 class="h2">
+                        Cadastro do ponto de coleta
+                    </h1>
+                    <!-- Dados da Entidade -->
+                    <fieldset class="form__fieldset">
+                        <legend class="form__legend">Dados da entidade</legend>
 
+                        <div class="form__group">
+                            <label class="form__label" for="name">Nome da entidade</label>
+                            <input class="form__input" id="name" name="name" type="text">
+                        </div>
 
-                <button class="btn">
-                    <span class="btn__text">Pesquisar pontos de coleta</span>
-                </button>
+                        <div class="l-form-row l-form-row--bigger-left">
+                            <div class="form__group">
+                                <label class="form__label" for="address">Endereço</label>
+                                <input class="form__input" id="address" name="address" type="text">
+                            </div>
+
+                            <div class="form__group">
+                                <label class="form__label" for="address-number">Número/Complemento</label>
+                                <input class="form__input" id="address-number" name="address-number" type="text">
+                            </div>
+                        </div>
+
+                        <div class="l-form-row">
+                            <div class="form__group">
+                                <label class="form__label" for="uf">Estado</label>
+                                <select name="uf" id="uf" class="form__input form__input--select">
+                                    <option value="">Selecione o estado</option>
+                                </select>
+
+                                <input type="hidden" name="state" id="state">
+                            </div>
+
+                            <div class="form__group">
+                                <label class="form__label" for="city">Cidade</label>
+                                <select name="city" id="city" class="form__input form__input--select" disabled>
+                                    <option value="">Selecione a cidade</option>
+                                </select>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- Itens de coleta -->
+                    <fieldset class="form__fieldset">
+                        <div class="l-form-legend-extra">
+                            <legend class="form__legend">
+                                Itens de coleta
+                            </legend>
+                            <span class="form__legend-extra">Selecione um ou mais itens abaixo</span>
+                        </div>
+
+                    </fieldset>
+
+                    <button class="btn" type="submit">
+                        <span class="btn__text">Cadastrar pontos de coleta</span>
+                    </button>
+                </form>
             </main>
         </div>
     </div>
+
+    <script src="scripts/create-point.js"></script>
 </body>
 
 </html>

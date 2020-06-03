@@ -1,5 +1,21 @@
+.page--create-point {
+    padding-bottom: 100px;
+}
+
 .page--create-point .header__register-point-icon {
     background-image: url(../assets/arrow-left.svg);
     height: 24px;
     margin-right: 12px;
+}
+
+@media (min-width: 992px) {
+    .page--create-point .h2 {
+        max-width: 269px;
+    }
+}
+
+@media (min-width: 992px) {
+    .page--create-point .btn {
+        margin-left: auto;
+    }
 }

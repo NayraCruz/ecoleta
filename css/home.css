@@ -3,6 +3,7 @@
     background-image: url(../assets/home-background.svg);
     background-position: 72vw bottom;
     background-size: auto;
+    height: 100vh;
 }
 @media (min-width: 768px) {
     .page--home {

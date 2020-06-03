@@ -26,7 +26,8 @@ time, mark, audio, video {
 
 /* make sure to set some focus styles for accessibility */
 :focus {
-    outline: 0;
+    outline: 2px solid #68caff;
+    outline-offset: 4px;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -123,23 +124,6 @@ html {
     font-size: 100%; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
     -ms-text-size-adjust: 100%; /* 2 */
-}
-
-/**
- * Address `outline` inconsistency between Chrome and other browsers.
- */
-
-a:focus {
-    outline: thin dotted;
-}
-
-/**
- * Improve readability when focused and also mouse hovered in all browsers.
- */
-
-a:active,
-a:hover {
-    outline: 0;
 }
 
 /**
