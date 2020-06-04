@@ -64,6 +64,12 @@
 /* Button */
 .page--home .btn {
     height: 72px;
+    margin-top: 24px;
+}
+@media (min-width: 992px) {
+    .page--home .btn {
+        margin-top: 40px;
+    }
 }
 
 .page--home .btn__icon {

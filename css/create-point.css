@@ -14,9 +14,24 @@
     }
 }
 
+.page--create-point .btn {
+    margin-top: 40px;
+    max-width: 266px;
+}
 @media (min-width: 992px) {
     .page--create-point .btn {
         margin-left: auto;
+        margin-top: 64px;
+    }
+}
+
+.page--create-point .form {
+    margin-top: 40px;
+}
+@media (min-width: 992px) {
+    .page--create-point .form {
+        margin-top: 80px;
+        padding: 64px;
     }
 }
 
@@ -88,4 +103,3 @@
     flex: 1;
     text-align: center;
 }
-

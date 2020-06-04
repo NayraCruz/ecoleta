@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/sr-only.css">
     <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/home.css">
 </head>
 
@@ -43,13 +44,39 @@
                     Ajudamos pessoas a encontrarem pontos de coleta de forma eficiente.
                 </p>
 
-                <a href="#" class="btn">
+                <a href="#" class="btn js-btn-show-modal">
                     <span class="btn__icon" aria-hidden="true"></span>
                     <span class="btn__text">Pesquisar pontos de coleta</span>
                 </a>
             </main>
         </div>
     </div>
+
+    <div class="modal -hide" tabindex="-1">
+        <div class="modal__content">
+            <div class="modal__header">
+                <h2 class="modal__title">Pontos de Coleta</h2>
+                <button class="modal__close"><span class="sr-only">Fechar</span></button>
+            </div>
+            <div class="modal__body">
+                <form class="form" action="">
+                    <div class="form__group">
+                        <label class="form__label" for="parameter-city">Cidade</label>
+
+                        <div class="l-form__input-btn">
+                            <input class="form__input" id="parameter-city" type="text" name="search" placeholder="Digite a cidade">
+                            <button class="btn">
+                                <span class="btn__icon" aria-hidden="true"></span>
+                                <span class="sr-only btn__text">Buscar</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/index.js"></script>
 </body>
 
 </html>
