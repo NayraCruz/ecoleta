@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecoleta</title>
+    <title>Ecoleta - Cadastro do ponto de coleta</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
 
@@ -20,7 +20,7 @@
             <header class="header">
                 <div class="l-header">
                     <div class="l-header__item">
-                        <a href="create-point.html" class="header__logo">
+                        <a href="index.html" class="header__logo">
                             <img src="assets/logo.svg" alt="Ecoleta">
                         </a>
                     </div>
@@ -44,25 +44,25 @@
                         <legend class="form__legend">Dados da entidade</legend>
 
                         <div class="form__group">
-                            <label class="form__label" for="name">Nome da entidade</label>
+                            <label class="form__label" for="name">Nome da entidade <abbr title="Obrigatório">*</abbr></label>
                             <input class="form__input" id="name" name="name" type="text" required>
                         </div>
 
                         <div class="l-form-row l-form-row--bigger-left">
                             <div class="form__group">
-                                <label class="form__label" for="address">Endereço</label>
+                                <label class="form__label" for="address">Endereço <abbr title="Obrigatório">*</abbr></label>
                                 <input class="form__input" id="address" name="address" type="text" required>
                             </div>
 
                             <div class="form__group">
-                                <label class="form__label" for="address-number">Número/Complemento</label>
+                                <label class="form__label" for="address-number">Número/Complemento <abbr title="Obrigatório">*</abbr></label>
                                 <input class="form__input" id="address-number" name="address-number" type="text" required>
                             </div>
                         </div>
 
                         <div class="l-form-row">
                             <div class="form__group">
-                                <label class="form__label" for="uf">Estado</label>
+                                <label class="form__label" for="uf">Estado <abbr title="Obrigatório">*</abbr></label>
                                 <select name="uf" id="uf" class="form__input form__input--select" required>
                                     <option value="" selected>Selecione o estado</option>
                                 </select>
@@ -71,7 +71,7 @@
                             </div>
 
                             <div class="form__group">
-                                <label class="form__label" for="city">Cidade</label>
+                                <label class="form__label" for="city">Cidade <abbr title="Obrigatório">*</abbr></label>
                                 <select name="city" id="city" class="form__input form__input--select" disabled required>
                                     <option value="" selected>Selecione a cidade</option>
                                 </select>

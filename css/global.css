@@ -15,6 +15,10 @@ html {
     -webkit-font-smoothing: antialiased;
 }
 
+body {
+    background-color: var(--bg-gray);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -214,7 +218,6 @@ h2, .h2 {
     Page
 */
 .page {
-    background-color: var(--bg-gray);
     background-repeat: no-repeat;
     position: relative;
 }
@@ -227,6 +230,10 @@ h2, .h2 {
     margin-left: auto;
     margin-right: auto;
     max-width: 736px;
+}
+
+.main-content--full {
+    max-width: 100%;
 }
 
 /* 
