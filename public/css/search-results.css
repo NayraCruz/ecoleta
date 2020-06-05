@@ -21,6 +21,11 @@ body::after {
     padding-bottom: 100px;
 }
 
+.page--search-results .header__register-point-icon {
+    background-image: url(../assets/arrow-left.svg);
+    height: 24px;
+    margin-right: 12px;
+}
 
 .page--search-results .main-content {
     margin-top: 64px;
