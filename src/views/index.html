@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+
+{% block styles %}
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/home.css">
+{% endblock styles %}
+
+{% set pageModifier = 'page--home' %}
+
+{% block pageContent %}
+    <h1 class="h1">
+        Seu marketplace <br>de coleta de resíduos.
+    </h1>
+
+    <p class="main-description">
+        Ajudamos pessoas a encontrarem pontos de coleta de forma eficiente.
+    </p>
+
+    <a href="#" class="btn js-btn-show-modal">
+        <span class="btn__icon" aria-hidden="true"></span>
+        <span class="btn__text">Pesquisar pontos de coleta</span>
+    </a>
+{% endblock pageContent %}
+
+{% block modal %}
+    <!-- Modal search -->
+    {% include 'partials/modal-search.html' %}
+{% endblock modal %}
+
+{% block scripts %}
+    <script src="scripts/index.js"></script>
+{% endblock scripts %}

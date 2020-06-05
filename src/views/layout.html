@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}
+        <title>Ecoleta</title>
+    {% endblock title %}
+    
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/sr-only.css">
+    <link rel="stylesheet" href="css/global.css">
+
+    {% block styles %}{% endblock styles %}
+</head>
+
+<body class="bg-cinza">
+    <div class="page {{ pageModifier }}">
+        <div class="container">
+            <!-- Header -->
+            {% include 'partials/page-header.html' %}
+
+            <main class="main-content">
+                {% block pageContent %}
+                {% endblock pageContent %}
+            </main>
+        </div>
+    </div>
+    
+    {% block modal %}
+    {% endblock modal %}
+    
+    {% block scripts %}
+    {% endblock scripts %}
+</body>
+</html>

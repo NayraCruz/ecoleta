@@ -1,0 +1,149 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    <title>Ecoleta - Cadastro do ponto de coleta</title>
+{% endblock title %}
+
+{% block styles %}
+    <link rel="stylesheet" href="css/create-point.css">
+{% endblock styles %}
+
+{% set pageModifier = 'page--create-point' %}
+
+{% block pageContent %}
+    <div class="container">
+        <main class="main-content">
+            <form class="form" action="">
+                <h1 class="h2">
+                    Cadastro do ponto de coleta
+                </h1>
+                <!-- Dados da Entidade -->
+                <fieldset class="form__fieldset">
+                    <legend class="form__legend">Dados da entidade</legend>
+
+                    <div class="l-form-row">
+                        <div class="form__group">
+                            <label class="form__label" for="name">Nome da entidade
+                                <abbr title="Obrigatório">*</abbr>
+                            </label>
+                            <input type="text" class="form__input" id="name" name="name" required="required">
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label" for="img-entity">Imagem da entidade
+                                <abbr title="Obrigatório">*</abbr>
+                            </label>
+                            <input 
+                            type="url" 
+                            class="form__input" 
+                            id="img-entity" 
+                            name="img-entity" 
+                            placeholder="http://" 
+                            required="required">
+                        </div>
+                    </div>
+
+                    <div class="l-form-row l-form-row--bigger-left">
+                        <div class="form__group">
+                            <label class="form__label" for="address">Endereço
+                                <abbr title="Obrigatório">*</abbr>
+                            </label>
+                            <input class="form__input" id="address" name="address" type="text" required="required">
+                        </div>
+
+                        <div class="form__group">
+                            <label class="form__label" for="address-number">Número/Complemento
+                                <abbr title="Obrigatório">*</abbr>
+                            </label>
+                            <input class="form__input" id="address-number" name="address-number" type="text" required="required">
+                        </div>
+                    </div>
+
+                    <div class="l-form-row">
+                        <div class="form__group">
+                            <label class="form__label" for="uf">Estado
+                                <abbr title="Obrigatório">*</abbr>
+                            </label>
+                            <select name="uf" id="uf" class="form__input form__input--select" required="required">
+                                <option value="" selected="selected">Selecione o estado</option>
+                            </select>
+
+                            <input type="hidden" name="state" id="state">
+                        </div>
+
+                        <div class="form__group">
+                            <label class="form__label" for="city">Cidade
+                                <abbr title="Obrigatório">*</abbr>
+                            </label>
+                            <select name="city" id="city" class="form__input form__input--select" disabled="disabled" required="required">
+                                <option value="" selected="selected">Selecione a cidade</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- Itens de coleta -->
+                <fieldset class="form__fieldset">
+                    <div class="l-form-legend-extra">
+                        <legend class="form__legend">
+                            Itens de coleta
+                        </legend>
+                        <span id="intruction-to-list" class="form__legend-extra">Selecione um ou mais itens abaixo</span>
+                    </div>
+
+                    <ul class="l-grid-items" aria-labelledby="intruction-to-list">
+                        <li class="l-grid-items__item">
+                            <div class="collect-item" data-id="1">
+                                <input type="checkbox" class="sr-only collect-item__checkbox" id="lampadas" name="itens-coleta" value="lampadas">
+                                <img src="assets/lampadas.svg" class="collect-item__img" alt="Ícone de Lâmpadas">
+                                <label for="lampadas" class="collect-item__label">Lâmpadas</label>
+                            </div>
+                        </li>
+                        <li class="l-grid-items__item">
+                            <div class="collect-item" data-id="2">
+                                <input type="checkbox" class="sr-only collect-item__checkbox" id="pilhas-baterias" name="itens-coleta" value="pilhas-baterias">
+                                <img src="assets/baterias.svg" class="collect-item__img" alt="Ícone de Pilhas e Baterias">
+                                <label for="pilhas-baterias" class="collect-item__label">Pilhas e Baterias</label>
+                            </div>
+                        </li>
+                        <li class="l-grid-items__item">
+                            <div class="collect-item" data-id="3">
+                                <input type="checkbox" class="sr-only collect-item__checkbox" id="papeis-papelao" name="itens-coleta" value="papeis-papelao">
+                                <img src="assets/papeis-papelao.svg" class="collect-item__img" alt="Ícone de Papéis e Papelão">
+                                <label for="papeis-papelao" class="collect-item__label">Papéis e Papelão</label>
+                            </div>
+                        </li>
+                        <li class="l-grid-items__item">
+                            <div class="collect-item" data-id="4">
+                                <input type="checkbox" class="sr-only collect-item__checkbox" id="residuos-eletronicos" name="itens-coleta" value="residuos-eletronicos">
+                                <img src="assets/eletronicos.svg" class="collect-item__img" alt="Ícone de Resíduos Eletrônicos">
+                                <label for="residuos-eletronicos" class="collect-item__label">Resíduos Eletrônicos</label>
+                            </div>
+                        </li>
+                        <li class="l-grid-items__item">
+                            <div class="collect-item" data-id="5">
+                                <input type="checkbox" class="sr-only collect-item__checkbox" id="residuos-organicos" name="itens-coleta" value="residuos-organicos">
+                                <img src="assets/organicos.svg" class="collect-item__img" alt="Ícone de Resíduos Orgânicos">
+                                <label for="residuos-organicos" class="collect-item__label">Resíduos Orgânicos</label>
+                            </div>
+                        </li>
+                        <li class="l-grid-items__item">
+                            <div class="collect-item" data-id="6">
+                                <input type="checkbox" class="sr-only collect-item__checkbox" id="oleo-cozinha" name="itens-coleta" value="oleo-cozinha">
+                                <img src="assets/oleo.svg" class="collect-item__img" alt="Ícone de Óleo de Cozinha">
+                                <label for="oleo-cozinha" class="collect-item__label">Óleo de Cozinha</label>
+                            </div>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <button class="btn" type="submit">
+                    <span class="btn__text">Cadastrar pontos de coleta</span>
+                </button>
+            </form>
+        </main>
+    </div>
+{% endblock pageContent %}
+
+{% block scripts %}
+    <script src="scripts/create-point.js"></script>
+{% endblock scripts %}

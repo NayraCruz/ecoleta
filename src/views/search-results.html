@@ -1,0 +1,49 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    <title>Ecoleta - Resultado da pesquisa</title>
+{% endblock title %}
+
+{% block styles %}
+    <link rel="stylesheet" href="css/search-results.css">
+{% endblock styles %}
+
+{% set pageModifier = 'page--search-results' %}
+
+{% block pageContent %}
+    <main class="main-content main-content--full">
+        <h1 class="title-results">
+            <span class="title-results__highlight">2 pontos</span>
+            encontrados</h1>
+
+        <ul class="l-cards">
+            <li class="l-cards__item">
+                <div class="card">
+                    <img class="card__image" src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="Latas de lixo coloridas">
+                    <h2 class="card__title">Colectoria</h2>
+                    <h3 class="card__subtitle">Resíduos Eletrônicos, Lâmpadas</h3>
+
+                    <p class="card__text">Rio do Sul, Santa Catarina
+                        <br>
+                        Guilherme Gemballa, Jardim América
+                        <br>
+                        Nº 260</p>
+                </div>
+            </li>
+
+            <li class="l-cards__item">
+                <div class="card">
+                    <img class="card__image" src="https://images.unsplash.com/photo-1539692267500-f384fb119654?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Homem levando lixo para fora">
+                    <h2 class="card__title">Papersider</h2>
+                    <h3 class="card__subtitle">Papéis e papelão</h3>
+
+                    <p class="card__text">Rio do Sul, Santa Catarina
+                        <br>
+                        Guilherme Gemballa, Jardim América
+                        <br>
+                        Nº 260</p>
+                </div>
+            </li>
+        </ul>
+    </main>
+{% endblock pageContent %}
