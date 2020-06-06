@@ -65,7 +65,7 @@ Algumas melhorias foram adicionadas ao projeto-base, como:
 
 ## :video_camera: Interface
 
-<img src="public/assets/capa-formulario-acessivel.png" alt="Capa do Ecoleta sobre o formulário acessível">
+<img src="public/assets/gravacao-ecoleta.gif" alt="Gif mostrando como funciona a interface do Ecoleta">
 
 
 <p align="center"><strong>Por <a href="https://www.linkedin.com/in/nayra-cruz/">Nayra Cruz 💁</a></strong></p>
