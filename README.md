@@ -10,7 +10,7 @@
 - [Tecnologias utilizadas](#-tecnologias-utilizadas)
 - [Melhorias Implementadas](#diamond_shape_with_a_dot_inside-melhorias-implementadas)
 - [Como baixar o projeto](#arrow_double_down-como-baixar-o-projeto)
-- [Interface](#video_camera-interface)
+- [Interface](#computer-interface)
 
 ## :information_source: Sobre
 
@@ -63,7 +63,7 @@ Algumas melhorias foram adicionadas ao projeto-base, como:
 
 ---
 
-## :video_camera: Interface
+## :computer: Interface
 Demonstração do resultado final da aplicação:
 
 <img src="public/assets/gravacao-ecoleta.gif" alt="Gif mostrando como funciona a interface do Ecoleta">
