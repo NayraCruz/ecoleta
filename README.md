@@ -10,6 +10,7 @@
 - [Tecnologias utilizadas](#-tecnologias-utilizadas)
 - [Melhorias Implementadas](#diamond_shape_with_a_dot_inside-melhorias-implementadas)
 - [Como baixar o projeto](#arrow_double_down-como-baixar-o-projeto)
+- [Interface](#video_camera-interface)
 
 ## :information_source: Sobre
 
@@ -59,6 +60,12 @@ Algumas melhorias foram adicionadas ao projeto-base, como:
   # Iniciar o projeto
   $ npm start
 ```
+
+---
+
+## :video_camera: Interface
+
+<img src="public/assets/capa-formulario-acessivel.png" alt="Capa do Ecoleta sobre o formulário acessível">
 
 
 <p align="center"><strong>Por <a href="https://www.linkedin.com/in/nayra-cruz/">Nayra Cruz 💁</a></strong></p>
