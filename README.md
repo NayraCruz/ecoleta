@@ -64,6 +64,7 @@ Algumas melhorias foram adicionadas ao projeto-base, como:
 ---
 
 ## :video_camera: Interface
+Demonstração do resultado final da aplicação:
 
 <img src="public/assets/gravacao-ecoleta.gif" alt="Gif mostrando como funciona a interface do Ecoleta">
 
