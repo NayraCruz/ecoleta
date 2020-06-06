@@ -58,6 +58,11 @@ for (const item of itemsToCollect) {
     checkboxItem.addEventListener("blur", unsetFocus);
 }
 
+// Input escondido
+const collectedItems = document.querySelector('input[name=items]');
+
+let selectedItems = [];
+
 function setFocus() {
     // Procura o checkbox
     let checkboxItem = event.target.querySelector('.collect-item__checkbox');
@@ -96,5 +101,31 @@ function handleSelectedItem(event) {
 
     //console.log(checkboxItem.checked); // Testa o checkbox marcado/desmarcado
 
-    const itemId = item.dataset.id;
+    
+    // Verificar se existem itens selecionados, se sim
+    /* pegar os itens selecionados */
+    const itemValue = checkboxItem.value;
+
+    const alreadySelected = selectedItems.findIndex( item => {
+        const itemFound = item == itemValue; // Isso será true ou false
+        return itemFound;
+    });
+
+    // Se já estiver selecionado, tirar da seleção
+    if (alreadySelected >= 0) {
+        // Tirar da seleção
+        const filteredItems = selectedItems.filter( item => {
+            const itemIsDifferent = item != itemValue;
+            return itemIsDifferent;
+        });
+
+        selectedItems = filteredItems;
+    } else {
+        // Se não estiver selecionado, adicionar à seleção
+        selectedItems.push(itemValue);
+    }
+    //console.log(selectedItems);
+
+    // Atualizar o campo escondido com os itens selecionados
+    collectedItems.value = selectedItems;
 }

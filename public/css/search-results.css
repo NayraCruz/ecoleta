@@ -1,19 +1,24 @@
 /* 
     Main 
 */
+body {
+    background-color: white;
+}
+
 body::after {
     content: '';
-    background-color: white;
+    background-color: var(--bg-gray);
     bottom: 0;
     left: 0;
-    position: fixed;
+    height: 18rem;
+    position: absolute;
     right: 0;
-    top: 260px;
+    top: 0;
     z-index: -1;
 }
 @media (min-width: 992px) {
     body::after {
-        top: 300px;
+        height: 19rem;
     }
 }
 
@@ -29,6 +34,7 @@ body::after {
 
 .page--search-results .main-content {
     margin-top: 64px;
+    max-width: 100%;
 }
 
 .title-results {

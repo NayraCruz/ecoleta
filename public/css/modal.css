@@ -67,3 +67,8 @@
     display: block;
     margin-bottom: 8px;
 }
+
+/* Modal point created */
+.modal--point .modal__body {
+    text-align: center;
+}

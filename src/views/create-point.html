@@ -6,6 +6,7 @@
 
 {% block styles %}
     <link rel="stylesheet" href="css/create-point.css">
+    <link rel="stylesheet" href="css/modal.css">
 {% endblock styles %}
 
 {% set pageModifier = 'page--create-point' %}
@@ -17,7 +18,7 @@
 {% block pageContent %}
     <div class="container">
         <main class="main-content">
-            <form class="form" action="">
+            <form class="form" action="/save-point" method="POST">
                 <h1 class="h2">
                     Cadastro do ponto de coleta
                 </h1>
@@ -33,14 +34,14 @@
                             <input type="text" class="form__input" id="name" name="name" required="required">
                         </div>
                         <div class="form__group">
-                            <label class="form__label" for="img-entity">Imagem da entidade
+                            <label class="form__label" for="image">Imagem da entidade
                                 <abbr title="Obrigatório">*</abbr>
                             </label>
                             <input 
                             type="url" 
                             class="form__input" 
-                            id="img-entity" 
-                            name="img-entity" 
+                            id="image" 
+                            name="image" 
                             placeholder="http://" 
                             required="required">
                         </div>
@@ -58,7 +59,7 @@
                             <label class="form__label" for="address-number">Número/Complemento
                                 <abbr title="Obrigatório">*</abbr>
                             </label>
-                            <input class="form__input" id="address-number" name="address-number" type="text" required="required">
+                            <input class="form__input" id="address-number" name="address2" type="text" required="required">
                         </div>
                     </div>
 
@@ -96,48 +97,49 @@
 
                     <ul class="l-grid-items" aria-labelledby="intruction-to-list">
                         <li class="l-grid-items__item">
-                            <div class="collect-item" data-id="1">
-                                <input type="checkbox" class="sr-only collect-item__checkbox" id="lampadas" name="itens-coleta" value="lampadas">
+                            <div class="collect-item" data-id="Lâmpadas">
+                                <input type="checkbox" class="sr-only collect-item__checkbox" id="lampadas" name="collect-items" value="Lâmpadas">
                                 <img src="assets/lampadas.svg" class="collect-item__img" alt="Ícone de Lâmpadas">
                                 <label for="lampadas" class="collect-item__label">Lâmpadas</label>
                             </div>
                         </li>
                         <li class="l-grid-items__item">
-                            <div class="collect-item" data-id="2">
-                                <input type="checkbox" class="sr-only collect-item__checkbox" id="pilhas-baterias" name="itens-coleta" value="pilhas-baterias">
+                            <div class="collect-item" data-id="Pilhas e Baterias">
+                                <input type="checkbox" class="sr-only collect-item__checkbox" id="pilhas-baterias" name="collect-items" value="Pilhas e Baterias">
                                 <img src="assets/baterias.svg" class="collect-item__img" alt="Ícone de Pilhas e Baterias">
                                 <label for="pilhas-baterias" class="collect-item__label">Pilhas e Baterias</label>
                             </div>
                         </li>
                         <li class="l-grid-items__item">
-                            <div class="collect-item" data-id="3">
-                                <input type="checkbox" class="sr-only collect-item__checkbox" id="papeis-papelao" name="itens-coleta" value="papeis-papelao">
+                            <div class="collect-item" data-id="Papéis e Papelão">
+                                <input type="checkbox" class="sr-only collect-item__checkbox" id="papeis-papelao" name="collect-items" value="Papéis e Papelão">
                                 <img src="assets/papeis-papelao.svg" class="collect-item__img" alt="Ícone de Papéis e Papelão">
                                 <label for="papeis-papelao" class="collect-item__label">Papéis e Papelão</label>
                             </div>
                         </li>
                         <li class="l-grid-items__item">
-                            <div class="collect-item" data-id="4">
-                                <input type="checkbox" class="sr-only collect-item__checkbox" id="residuos-eletronicos" name="itens-coleta" value="residuos-eletronicos">
+                            <div class="collect-item" data-id="Resíduos Eletrônicos">
+                                <input type="checkbox" class="sr-only collect-item__checkbox" id="residuos-eletronicos" name="collect-items" value="Resíduos Eletrônicos">
                                 <img src="assets/eletronicos.svg" class="collect-item__img" alt="Ícone de Resíduos Eletrônicos">
                                 <label for="residuos-eletronicos" class="collect-item__label">Resíduos Eletrônicos</label>
                             </div>
                         </li>
                         <li class="l-grid-items__item">
-                            <div class="collect-item" data-id="5">
-                                <input type="checkbox" class="sr-only collect-item__checkbox" id="residuos-organicos" name="itens-coleta" value="residuos-organicos">
+                            <div class="collect-item" data-id="Resíduos Orgânicos">
+                                <input type="checkbox" class="sr-only collect-item__checkbox" id="residuos-organicos" name="collect-items" value="Resíduos Orgânicos">
                                 <img src="assets/organicos.svg" class="collect-item__img" alt="Ícone de Resíduos Orgânicos">
                                 <label for="residuos-organicos" class="collect-item__label">Resíduos Orgânicos</label>
                             </div>
                         </li>
                         <li class="l-grid-items__item">
-                            <div class="collect-item" data-id="6">
-                                <input type="checkbox" class="sr-only collect-item__checkbox" id="oleo-cozinha" name="itens-coleta" value="oleo-cozinha">
+                            <div class="collect-item" data-id="Óleo de Cozinha<">
+                                <input type="checkbox" class="sr-only collect-item__checkbox" id="oleo-cozinha" name="collect-items" value="Óleo de Cozinha">
                                 <img src="assets/oleo.svg" class="collect-item__img" alt="Ícone de Óleo de Cozinha">
                                 <label for="oleo-cozinha" class="collect-item__label">Óleo de Cozinha</label>
                             </div>
                         </li>
                     </ul>
+                    <input type="hidden" id="items" name="items">
                 </fieldset>
 
                 <button class="btn" type="submit">
@@ -148,6 +150,12 @@
     </div>
 {% endblock pageContent %}
 
+{% block modal %}
+    {% if saved %}
+        {%include 'partials/modal-point-created.html' %}
+    {% endif %}
+{% endblock modal %}
+            
 {% block scripts %}
     <script src="scripts/create-point.js"></script>
 {% endblock scripts %}
