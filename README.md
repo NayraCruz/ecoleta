@@ -2,11 +2,14 @@
   <img src="public/assets/logo.svg" alt="Logo do Ecoleta">
 </h1>
 
+<img src="public/assets/capa-formulario-acessivel.png" alt="Capa do Ecoleta sobre o formulário acessível">
+
 # Índice
 
-- [Sobre](#-sobre)
+- [Sobre](#information_source-sobre)
 - [Tecnologias utilizadas](#-tecnologias-utilizadas)
-- [Como baixar o projeto](#-como-baixar-o-projeto)
+- [Melhorias Implementadas](#diamond_shape_with_a_dot_inside-melhorias-implementadas)
+- [Como baixar o projeto](#arrow_double_down-como-baixar-o-projeto)
 
 ## :information_source: Sobre
 
@@ -30,6 +33,16 @@ O **Ecoleta** é uma aplicação web de coleta de resíduos, desenvolvida na tri
 
 ---
 
+## :diamond_shape_with_a_dot_inside: Melhorias implementadas
+Algumas melhorias foram adicionadas ao projeto-base, como:
+- Mobile first
+- Progressive enhancement
+- BEM (Block Element Modifier)
+- Responsividade
+- Aplicação de técnicas e conceitos para a acessibilidade 🔝
+
+---
+
 ## :arrow_double_down: Como baixar o projeto
 
 ```bash
@@ -46,8 +59,6 @@ O **Ecoleta** é uma aplicação web de coleta de resíduos, desenvolvida na tri
   # Iniciar o projeto
   $ npm start
 ```
-
-<img src="public/assets/capa-formulario-acessivel.png" alt="Capa do Ecoleta sobre o formulário acessível">
 
 
 <p align="center"><strong>Por <a href="https://www.linkedin.com/in/nayra-cruz/">Nayra Cruz 💁</a></strong></p>
