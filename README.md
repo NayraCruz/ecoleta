@@ -2,17 +2,15 @@
   <img src="public/assets/logo.svg" alt="Logo do Ecoleta">
 </h1>
 
-## Sobre
+## ℹ️ Sobre
 
-O **Ecoleta** é uma aplicação web de coleta de resíduos, desenvolvida na trilha Starter do evento **Next Level Week**, sob as aulas do instrutor da Rocketseat **Mayk Brito**, de 01/06/2020 a 05/06/2020, no qual é possível:
+O **Ecoleta** é uma aplicação web de coleta de resíduos, desenvolvida na trilha Starter do evento **Next Level Week**, sob as aulas do instrutor da [Rocketseat](https://rocketseat.com.br/) **[Mayk Brito](https://github.com/maykbrito)**, de 01/06/2020 a 05/06/2020, no qual é possível:
 
 1. Cadastrar um ponto de coleta.
 1. Buscar os pontos de coleta cadastrados por cidade.
 1. Visualizar os pontos cadastrados.
 
-Essa aplicação .
-
-## Tecnologias utilizadas
+## 🚀 Tecnologias utilizadas
 - HTML
 - CSS
 - Javascript
@@ -22,5 +20,20 @@ Essa aplicação .
 - Nunjunks
 - SQLite
 
+## ⬇️ Como baixar o projeto
+
+```bash
+
+  $ git clone https://github.com/NayraCruz/ecoleta.git
+  
+  $ cd ecoleta
+  
+  $ npm install
+  
+  $ npm start
+```
 
 <img src="public/assets/capa-formulario-acessivel.png" alt="Capa do Ecoleta sobre o formulário acessível">
+
+
+<p align="center"><strong>Por <a href="https://www.linkedin.com/in/nayra-cruz/">Nayra Cruz 💁</a></strong></p>
