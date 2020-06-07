@@ -8,7 +8,7 @@
 
 - [Sobre](#information_source-sobre)
 - [Tecnologias utilizadas](#-tecnologias-utilizadas)
-- [Melhorias Implementadas](#diamond_shape_with_a_dot_inside-melhorias-implementadas)
+- [Melhorias Implementadas](#-melhorias-implementadas)
 - [Como baixar o projeto](#arrow_double_down-como-baixar-o-projeto)
 - [Interface](#computer-interface)
 
@@ -34,7 +34,7 @@ O **Ecoleta** é uma aplicação web de coleta de resíduos, desenvolvida na tri
 
 ---
 
-## :diamond_shape_with_a_dot_inside: Melhorias implementadas
+## 💠 Melhorias implementadas
 Algumas melhorias foram adicionadas ao projeto-base, como:
 - Mobile first
 - Progressive enhancement
