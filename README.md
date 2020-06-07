@@ -14,7 +14,7 @@
 
 ## :information_source: Sobre
 
-O **Ecoleta** é uma aplicação web de coleta de resíduos, desenvolvida na trilha Starter do evento **Next Level Week**, sob as aulas do instrutor da [Rocketseat](https://rocketseat.com.br/) **[Mayk Brito](https://github.com/maykbrito)**, no qual é possível:
+O **Ecoleta** é uma aplicação web de coleta de resíduos, desenvolvida na trilha Starter do evento **Next Level Week**, sob as aulas do instrutor da [Rocketseat](https://rocketseat.com.br/) **[Mayk Brito](https://github.com/maykbrito)** e utilizando o design do [Tiago Luchtenberg](https://www.linkedin.com/in/tiago-luchtenberg-0b9a3b97), no qual é possível:
 
 1. Cadastrar um ponto de coleta.
 1. Buscar os pontos de coleta cadastrados por cidade.
