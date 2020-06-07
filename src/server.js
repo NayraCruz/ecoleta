@@ -3,8 +3,13 @@ const express = require('express');
 // Variável para executar o servidor express
 const server = express();
 
+// Configurar quais urls iremos deixar acessar a aplicação
+const cors = require('cors');
+
 // Pegar o banco de dados
 const db = require('./database/db');
+
+server.use(cors());
 
 // Configura a pasta pública
 server.use(express.static('public'));
