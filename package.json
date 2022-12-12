@@ -19,7 +19,7 @@
   "homepage": "https://github.com/NayraCruz/ecoleta#readme",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "nunjucks": "^3.2.1",
     "sqlite3": "^4.2.0"
   },
